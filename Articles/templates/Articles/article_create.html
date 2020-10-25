@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+    <div class="create-article">
+        <h2> Create an awesome new article</h2>
+        <form class="site-form" action="{% url 'Articles:create' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input type="submit" value="create">
+        </form>
+    </div>
+{% endblock %}
