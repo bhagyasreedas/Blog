@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <title>Articles</title>
     <link rel="stylesheet" type='text/css' href="{% static 'style.css' %}" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +15,7 @@
         <header class="wrapper">
 
             <h1>
-                <a href="{% url 'home' %}"><img class="logo" src="{% static 'bhagya.jpg' %}" /></a>
+                <a href="{% url 'home' %}"><img class="logo" src="{% static 'bhagya1.jpeg' %}" /></a>
             </h1>
             <ul>
                 {% if user.is_authenticated %}

@@ -1,6 +1,5 @@
     body {
-        background-color: #0f121f;
-        background-image: url(computer.jpg);
+        background-color: oldlace;
         background-repeat: no-repeat;
         color: #fff;
     }
@@ -11,7 +10,9 @@
     
     .wrapper .logo {
         width: 50px;
-        height: 30px;
+        height: 50px;
+        margin: 3px 6px;
+        border-radius: 50%;
     }
     
     h1,
@@ -19,6 +20,7 @@
     h3,
     h4,
     h5 {
+        color: brown;
         font-weight: normal;
         margin: 0;
     }
@@ -48,8 +50,8 @@
     }
     
     nav {
-        background-image: url(stars.png);
         top: 0px;
+        height: 80px;
         width: 100%;
     }
     
@@ -59,18 +61,21 @@
     }
     
     nav button {
+        position: absolute;
+        right: 10px;
         background: none;
-        color: #fff;
+        color: red;
         cursor: pointer;
-        border: 0;
+        border: 1px solid red;
         font-size: 1.2em;
+        opacity: 0.9;
+        border-radius: 5px;
     }
     
     .articles {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
-        background-image: url(flower.jpg);
     }
     
     .article {
@@ -78,9 +83,11 @@
         border: 5px solid #00dba0;
         position: relative;
         padding-bottom: 40px;
+        background-image: url(flower.jpg);
     }
     
     .article h2 {
+        font-family: 'sans-serif', serif;
         font-size: 1.2em;
     }
     
@@ -116,6 +123,7 @@
         margin-top: 60px;
         border: 1px solid #00dba0;
         padding: 20px;
+        background-image: url(hand.png);
     }
     
     .site-form input,
@@ -126,10 +134,13 @@
     }
     
     a.highlight {
-        border: 1px solid #00dba0;
+        position: absolute;
+        right: 100px;
+        top: 40px;
+        border: 1px solid aquamarine;
         padding: 10px;
-        border-radius: 4px;
-        color: #00dba0;
+        border-radius: 10px;
+        color: green;
     }
     
     .help-block .help-block ul {
